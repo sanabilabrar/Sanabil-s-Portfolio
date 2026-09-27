@@ -1236,3 +1236,113 @@ img {
         aspect-ratio: 1.05;
     }
 }
+
+/* =========================================
+   MOBILE PROJECT MODAL FIX
+========================================= */
+
+@media (max-width: 800px) {
+
+    .modal-backdrop {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh;
+
+        z-index: 9999;
+
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+        padding: 20px;
+
+        overflow-y: auto;
+
+        background: rgba(0, 0, 0, 0.85);
+
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+    }
+
+    .modal-backdrop.active {
+        display: flex;
+    }
+
+    .project-modal {
+        position: relative;
+
+        width: 100%;
+        max-width: 650px;
+
+        max-height: calc(100dvh - 40px);
+
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        padding: 55px 25px 30px;
+
+        background: var(--surface);
+
+        border: 1px solid var(--line);
+
+        margin: auto;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    .modal-content .eyebrow {
+        font-size: 8px;
+        margin-bottom: 18px;
+    }
+
+    .modal-content h2 {
+        font-size: clamp(42px, 13vw, 55px);
+        line-height: 0.95;
+        margin-bottom: 22px;
+        word-break: normal;
+    }
+
+    .modal-content > p:not(.eyebrow) {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .modal-details {
+        margin-top: 25px;
+        padding-top: 20px;
+    }
+
+    .modal-details p {
+        font-size: 11px;
+        line-height: 1.8;
+    }
+
+    .stack-list {
+        margin-top: 22px;
+        gap: 7px;
+    }
+
+    .stack-list span {
+        padding: 7px 10px;
+        font-size: 8px;
+    }
+
+    .modal-link {
+        margin-top: 25px;
+        font-size: 11px;
+    }
+
+    .modal-close {
+        top: 12px;
+        right: 12px;
+
+        width: 34px;
+        height: 34px;
+
+        z-index: 10;
+    }
+}
