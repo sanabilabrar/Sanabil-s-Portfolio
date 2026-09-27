@@ -27,9 +27,27 @@ const projects = {
         ],
 
         url: "https://eloriagermany.com/"
+    },
+
+    coffee: {
+        category: "Coffee website · HTML + CSS + JavaScript",
+
+        title: "Coffee Town",
+
+        description:
+            "A warm, modern coffee website designed with rich visuals, an inviting layout, and a smooth browsing experience.",
+
+        details:
+            "A coffee-themed website created with a warm visual style, engaging sections, responsive design, and a user-friendly browsing experience.",
+
+        stack: [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+
+        url: "https://sanabilabrar.github.io/coffee-town-website/"
     }
-
-
 
 };
 
@@ -94,8 +112,8 @@ function openProject(projectId) {
         return;
     }
 
-
-    const modal = document.getElementById("projectModal");
+    const modal =
+        document.getElementById("projectModal");
 
     const category =
         document.getElementById("modalCategory");
@@ -219,10 +237,8 @@ function submitForm(event) {
 
     event.preventDefault();
 
-
     const form =
         document.getElementById("contactForm");
-
 
     const name =
         document.getElementById("name").value.trim();
@@ -235,21 +251,14 @@ function submitForm(event) {
 
 
     if (!name || !email || !message) {
-
         return;
-
     }
 
 
-    /*
-       IMPORTANT:
-
-       Replace this email with your real email
-       address before publishing the website.
-    */
+    /* Your email address */
 
     const myEmail =
-        "sanabilabrar@example.com";
+        "sanabilabrar12@gmail.com";
 
 
     const subject =
@@ -269,10 +278,7 @@ function submitForm(event) {
         );
 
 
-    /*
-       Open the visitor's email application
-       with the message already prepared.
-    */
+    /* Open visitor's email application */
 
     window.location.href =
         "mailto:" +
@@ -283,9 +289,7 @@ function submitForm(event) {
         body;
 
 
-    /*
-       Show success message
-    */
+    /* Show success message */
 
     const success =
         document.getElementById("successMessage");
@@ -293,9 +297,7 @@ function submitForm(event) {
     success.classList.add("show");
 
 
-    /*
-       Clear the form
-    */
+    /* Clear the form */
 
     form.reset();
 
