@@ -29,26 +29,26 @@ const projects = {
         url: "https://eloriagermany.com/"
     },
 
-    coffee: {
-        category: "Coffee website · HTML + CSS + JavaScript",
+   coffee: {
+        category: "Coffee website · UI/UX · HTML + CSS + JavaScript",
 
         title: "Coffee Town",
 
         description:
-            "A warm, modern coffee website designed with rich visuals, an inviting layout, and a smooth browsing experience.",
+            "A clean and inviting coffee website designed with a simple UI, intuitive navigation, and a smooth user experience.",
 
         details:
-            "A coffee-themed website created with a warm visual style, engaging sections, responsive design, and a user-friendly browsing experience.",
+            "Coffee Town focuses on a warm visual identity, user-friendly navigation, responsive layouts, and a simple browsing experience designed to make the website easy and enjoyable to explore.",
 
         stack: [
+            "UI/UX",
             "HTML",
             "CSS",
             "JavaScript"
         ],
-
+      
         url: "https://sanabilabrar.github.io/coffee-town-website/"
     }
-
 };
 
 
