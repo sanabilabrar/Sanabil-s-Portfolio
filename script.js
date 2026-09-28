@@ -29,7 +29,7 @@ const projects = {
         url: "https://eloriagermany.com/"
     },
 
-   coffee: {
+    coffee: {
         category: "Coffee website · UI/UX · HTML + CSS + JavaScript",
 
         title: "Coffee Town",
@@ -46,10 +46,12 @@ const projects = {
             "CSS",
             "JavaScript"
         ],
-      
+
         url: "https://sanabilabrar.github.io/coffee-town-website/"
     }
+
 };
+
 
 
 /* =========================================
